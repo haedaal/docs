@@ -95,7 +95,7 @@ suit your particular situation.
 #### The push Workflow File
 
 Next, add a second workflow file at `.github/workflows/push.yml` containing the following
-definition, which tells GitHub to run `pulumi up` in response to a commit on the `master`
+definition, which tells GitHub to run `pulumi up` in response to a commit on the `main`
 branch:
 
 ```yaml
@@ -103,7 +103,7 @@ name: Pulumi
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   up:
     name: Update
